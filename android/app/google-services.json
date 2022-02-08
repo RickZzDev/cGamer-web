@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "758332201266",
+    "project_id": "banco-gamer",
+    "storage_bucket": "banco-gamer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758332201266:android:68c594ee1df3e7e4529f2b",
+        "android_client_info": {
+          "package_name": "br.com.bancogamer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758332201266-tb1rtg1dhfrpj7o37i83khrl9l9h57er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT4Sw7WgFsyfyZj7v2szR-bRK1_7oOM44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758332201266-tb1rtg1dhfrpj7o37i83khrl9l9h57er.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "jogga-bank",
+    "Jogga Bank": "banco-gamer"
+  },
+  "targets": {}
+}

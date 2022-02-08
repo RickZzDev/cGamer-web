@@ -1,0 +1,45 @@
+{
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "CBD25C02",
+      "localizations" : [
+
+      ],
+      "name" : "Assinaturas PRO",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "14.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "CA999FAD",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "Assinatura PRO Mensal",
+              "locale" : "pt_BR"
+            }
+          ],
+          "productID" : "PROMENSAL",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Assinatura PRO Mensal",
+          "subscriptionGroupID" : "CBD25C02",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 0
+  }
+}

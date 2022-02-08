@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="freshchat_file_provider_authority">com.example.demoapp.provider</string>
+    <!-- <string name="zui_attachment_indicator_accessibility">Selecione um anexo</string>
+    <string name="zui_attachment_indicator_n_attachments_selected_accessibility">Existem %d anexos selecionados</string>
+    <string name="zui_attachment_indicator_no_attachments_selected_accessibility">Não há anexos selecionados</string>
+    <string name="zui_attachment_indicator_one_attachments_selected_accessibility">Existe um anexo selecionado</string>
+    <string name="zui_bot_label">GAMER BOT</string>
+    <string name="zui_button_label_no">Não</string>
+    <string name="zui_button_label_yes">Sim</string>
+    <string name="zui_cell_text_suggested_article_header">Aqui está um artigo que pode ajudar:</string>
+    <string name="zui_cell_text_suggested_articles_header">Aqui estão alguns artigos que podem ajudar:</string>
+    <string name="zui_default_bot_name">Herry</string>
+    <string name="zui_failed_message_copy">Copiar</string>
+    <string name="zui_failed_message_delete">Apagar</string>
+    <string name="zui_failed_message_retry">Tentar novamente</string>
+    <string name="zui_hint_type_message">Digite uma mensagem…</string>
+    <string name="zui_label_dialog_delete_btn">Apagar mensagem</string>
+    <string name="zui_label_dialog_retry_btn">Tentar enviar novamente</string>
+    <string name="zui_label_failed">Falhou</string>
+    <string name="zui_label_send">Enviar</string>
+    <string name="zui_label_sent">Enviado</string>
+    <string name="zui_label_tap_retry">Toque para tentar novamente</string>
+    <string name="zui_message_log_article_opened_formatter">%1$s artigo aberto \'%2$s\'</string>
+    <string name="zui_message_log_article_suggestion_message">Encontrei estes artigos:</string>
+    <string name="zui_message_log_default_visitor_name">Visitante</string>
+    <string name="zui_message_log_message_failed_to_send">[Falha ao enviar]</string>
+    <string name="zui_message_log_transfer_option_selection_formatter">%1$s selecionado %2$s</string>
+    <string name="zui_retry_button_label">Tentar novamente</string>
+    <string name="zui_toolbar_title">Atendimento</string>
+    <string name="zui_label_reconnecting">Reconectando&#8230;</string>
+    <string name="zui_label_reconnecting_failed">A conexão falhou.</string>
+    <string name="zui_message_log_attachment_sending_failed">O anexo não pôde ser enviado</string>
+    <string name="zui_message_log_message_attachment_type_not_supported">Tipo de anexo não suportado</string>
+    <string name="zui_message_log_message_attachments_not_supported">Anexos não suportados</string>
+    <string name="zui_message_log_message_file_exceeds_max_size">Excede o tamanho máximo do arquivo (%1$s)</string>
+
+    <string name="zab_answer_bot">Herry</string>
+    <string name="zab_cell_text_acknowledgement_did_help">Legal. Conhecimento é poder.</string>
+    <string name="zab_cell_text_acknowledgement_did_not_help">Entendo. Sua pergunta ainda não foi resolvida.</string>
+    <string name="zab_cell_text_answerbot_disabled_header">Você também pode entrar em contato.</string>
+    <string name="zab_cell_text_answerbot_disabled_response">Opa. Desculpe, algo está acontecendo. Não posso responder a perguntas agora.</string>
+    <string name="zab_cell_text_contact_options_header">Você gostaria de entrar em contato?</string>
+    <string name="zab_cell_text_did_help_ask_again">Se houver mais alguma coisa que eu possa encontrar para você, basta digitar outra pergunta.</string>
+    <string name="zab_cell_text_help_followup_question">Por favor, conte-nos mais. O artigo estava relacionado à sua pergunta?</string>
+    <string name="zab_cell_text_inactivity_contact_option_header">Ou você pode entrar em contato.</string>
+    <string name="zab_cell_text_no_articles">Não consegui encontrar nenhum artigo relevante.</string>
+    <string name="zab_cell_text_prompt">Faça-me uma pergunta e eu encontrarei a resposta para você.</string>
+    <string name="zab_cell_text_prompt_another_question">Ou você pode fazer outra pergunta.</string>
+    <string name="zab_cell_text_prompt_another_question_no_transfer_options">Você pode tentar me fazer outra pergunta.</string>
+    <string name="zab_cell_text_question_did_article_help_with_question">O artigo que você leu ajudou a responder à sua pergunta?</string>
+    <string name="zab_cell_text_welcome">Olá!</string>
+    <string name="zab_error_load_article">Falha ao carregar o artigo.</string>
+    <string name="zab_hint_type_your_question">Digite sua pergunta…</string>
+    <string name="zab_view_article_help_followup_question">O artigo estava relacionado à sua pergunta?</string>
+    <string name="zab_view_article_help_no">Não, preciso de ajuda.</string>
+    <string name="zab_view_article_help_question">Este artigo responde à sua pergunta?</string>
+    <string name="zab_view_article_help_reason_didnt_answer">Está relacionado, mas não respondeu à minha pergunta.</string>
+    <string name="zab_view_article_help_reason_not_related">Não tem relação com a minha pergunta.</string>
+    <string name="zab_view_article_help_yes">Sim</string>
+    <string name="zab_view_article_loaded_accessibility">%s artigo carregado</string>
+
+
+    <string name="zch_chat_comment_acknowledgement">Obrigado pelo feedback. Agora você pode voltar ao seu bate-papo.</string>
+    <string name="zch_chat_comment_composer_hint">Digite seu comentário&#8230;</string>
+    <string name="zch_chat_ended">Chat encerrado</string>
+    <string name="zch_chat_handover_message_selection">Converse com um atendente</string>
+    <string name="zch_chat_rating_comment_action_label">Adicione um comentário</string>
+    <string name="zch_chat_rating_comment_prompt_message">Valorizamos seu feedback. Se desejar, você também pode adicionar um comentário com mais detalhes.</string>
+    <string name="zch_chat_rating_label_bad">Ruim :thumbs-down-emoji:</string>
+    <string name="zch_chat_rating_label_good">Bom :thumbs-up-emoji:</string>
+    <string name="zch_chat_rating_request_prompt">Ei, só querendo saber como está indo o papo com o %s?</string>
+    <string name="zch_chat_transcript_email_prompt">Para qual endereço de e-mail a transcrição deve ser enviada?</string>
+    <string name="zch_chat_transcript_prompt">Deseja que uma transcrição deste bate-papo seja enviada para seu e-mail?</string>
+    <string name="zch_chat_transcript_request_confirmation">A transcrição será enviada para %1$s quando o bate-papo terminar</string>
+    <string name="zch_chat_welcome_message_handover">OK. Vou encontrar alguém que possa ajudar com sua dúvida.</string>
+    <string name="zch_contact_option_chat_with_us">Converse conosco</string>
+    <string name="zch_end_chat">Fim de papo</string>
+    <string name="zch_member_join">%1$s entrou no chat</string>
+    <string name="zch_member_leave">%1$s saiu do chat</string>
+    <string name="zch_offline_form_completion_acknowledgement">Recebemos sua mensagem e entraremos em contato com você o mais breve possível.</string>
+    <string name="zch_offline_form_introduction_message">Para entrar em contato com você quando alguém estiver disponível, preciso de mais algumas informações.</string>
+    <string name="zch_offline_form_message_field_prompt">O que podemos ajudá-lo quando estivermos online novamente?</string>
+    <string name="zch_offline_form_message_prompt">Para entrar em contato com você quando alguém estiver disponível, preciso de mais algumas informações.</string>
+    <string name="zch_offline_form_welcome_message">Olá. Infelizmente, ninguém está online no momento.</string>
+    <string name="zch_offline_message">Infelizmente, ninguém está online no momento. Volte mais tarde.</string>
+    <string name="zch_pre_chat_department_field_message">Qual departamento seria o mais capaz de responder à sua pergunta?</string>
+    <string name="zch_pre_chat_email_field_hint">Qual é o seu endereço de e-mail?</string>
+    <string name="zch_pre_chat_email_field_invalid_message">O endereço de e-mail que você digitou está incorreto. Digite um endereço de e-mail válido.</string>
+    <string name="zch_pre_chat_email_field_message">Qual é o seu endereço de e-mail?</string>
+    <string name="zch_pre_chat_introduction_greeting">Oi!</string>
+    <string name="zch_pre_chat_introduction_message">Vou encontrar alguém para te ajudar. Mas antes, preciso de algumas informações.</string>
+    <string name="zch_pre_chat_message_acknowledgement">Vou encontrar alguém para te ajudar. Mas antes, preciso de mais algumas informações.</string>
+    <string name="zch_pre_chat_name_field_hint">Qual o seu nome?</string>
+    <string name="zch_pre_chat_name_field_message">Qual o seu nome?</string>
+    <string name="zch_pre_chat_phone_field_hint">Qual é o seu numero de telefone?</string>
+    <string name="zch_pre_chat_phone_field_message">Qual é o seu numero de telefone?</string>
+    <string name="zch_pre_chat_response_accepted_message">Obrigado.</string>
+    <string name="zch_pre_chat_skip_button">Pular</string>
+    <string name="zch_pre_chat_welcome_message">Olá, como posso te ajudar hoje?</string>
+    <string name="zch_queue_position">Posição na fila: %1$d</string>
+    <string name="zch_request_transcript">Solicitar transcrição</string>
+
+
+    <string name="zs_engine_greeting_message">Digite uma mensagem e encontrarei alguém que possa ajudá-lo.</string>
+    <string name="zs_engine_message_retry_button">Tentar novamente</string>
+    <string name="zs_engine_message_send_error_message">Algo deu errado e não consegui enviar sua mensagem. Por favor, tente novamente mais tarde.</string>
+    <string name="zs_engine_request_created_conversations_disabled_message">Obrigada. Uma mensagem foi enviada para a equipe. Se uma resposta for necessária, eles entrarão em contato com você no %s.</string>
+    <string name="zs_engine_request_created_conversations_enabled_message">Obrigada. Uma mensagem foi enviada para a equipe. Você pode ver esta mensagem e adicionar detalhes adicionais aqui:</string>
+    <string name="zs_engine_request_created_request_list_button">Ver mensagens</string>
+    <string name="zs_engine_request_creation_email_invalid_message">Algo não está certo com este endereço. Tente inseri-lo novamente.</string>
+    <string name="zs_engine_request_creation_email_prompt_hint">Digite seu e-mail&#8230;</string>
+    <string name="zs_engine_request_creation_email_prompt_message">Se uma resposta for necessária, alguém entrará em contato com você por e-mail. Qual é o seu endereço de e-mail?</string> -->
+
+    <string name="tools_label_duration">Duração</string>
+
+	<string name="freshchat_default_agent_name">Jogga Bank</string>
+
+	<string name="freshchat_view_text">Visualizar</string>
+
+	<string name="freshchat_chat_deeplink">@string/freshchat_view_text</string>
+	<string name="freshchat_chat_deeplink_faq">Ver FAQ</string>
+	<string name="freshchat_chat_message_composer_hint">Escreva uma mensagem</string>
+	<string name="freshchat_chat_capture_from_camera">Tirar uma foto</string>
+	<string name="freshchat_chat_select_from_gallery">Buscar da galeria</string>
+
+	<string name="freshchat_channel_list_empty">Oops, nenhuma mensagem por aqui!</string>
+	<string name="freshchat_channel_disabled">Ops, este bate-papo não está mais disponível</string>
+
+	<string name="freshchat_faqs_reload_and_redirect">FAQs updated. Redirecting...</string>
+	<string name="freshchat_faq_list_empty">Sorry! There are no FAQs available</string>
+	<string name="freshchat_faq_vote_successful">Thanks for your feedback!</string>
+	<string name="freshchat_faq_voting_prompt">Was this FAQ helpful?</string>
+	<string name="freshchat_faq_upvote">@string/freshchat_yes</string>
+	<string name="freshchat_faq_downvote">@string/freshchat_no</string>
+	<string name="freshchat_faq_video_loading">Carregando video...  </string>
+	<string name="freshchat_faq_search_query_hint">Search FAQs</string>
+	<string name="freshchat_faq_failed_to_load">This FAQ is no longer available</string>
+	<string name="freshchat_faq_rich_media_content_cannot_be_displayed">Connect to internet to view the rich media content</string>
+
+	<string name="freshchat_yes">Sim</string>
+	<string name="freshchat_no">Não</string>
+
+	<!--General-->
+	<string name="freshchat_loading">Carregando..</string>
+	<string name="freshchat_no_connection">Sem conexão</string>
+	<string name="freshchat_check_internet_connection">Por favor verifique sua conexão com a internet.</string>
+	<string name="freshchat_retry">@string/freshchat_calendar_timeslots_retry</string>
+	<string name="freshchat_error_was_encountered">Um erro inesperado foi encontrado.</string>
+
+	<!-- Hint for Input Fields -->
+
+
+	<!-- Content descriptions for accessibility -->
+	<string name="freshchat_content_description_send_message">Enviar mensagem</string>
+	<string name="freshchat_content_description_attach_picture">Attach a picture</string>
+	<string name="freshchat_content_description_send_voice_message">Record a voice message</string>
+	<string name="freshchat_content_description_upload_status">Message upload Status</string>
+	<string name="freshchat_content_description_show_original_content">Show Original</string>
+	<string name="freshchat_content_description_hide_original_content">Hide Original</string>
+
+	<!-- Error messages -->
+	<string name="freshchat_error_send_message_when_no_internet">Oops, no internet connection! Message will be sent when you reconnect.</string>
+	<string name="freshchat_error_message_not_connected_to_internet">No internet connection!</string>
+	<string name="freshchat_error_message_faq_section_not_enabled">Uh-uh! FAQ section is unavailable</string>
+	<string name="freshchat_error_message_inbox_section_not_enabled">Uh-uh! Chat section is unavailable. </string>
+	<string name="freshchat_error_message_account_not_active">This section is no longer available</string>
+	<string name="freshchat_error_message_init_not_completed">Freshchat SDK not initialized. Please invoke Freshchat.init() first and invoke {{method_name}} again!</string>
+	<string name="freshchat_error_message_init_not_completed_method_name_placeholder">{{method_name}}</string>
+	<string name="freshchat_error_message_failed_to_launch_support_section">Oops! Failed to launch</string>
+	<string name="freshchat_error_message_token_failed">Oops! Something went wrong. Please relaunch the screen.</string>
+
+	<!-- Permission prompts and rationale -->
+	<string name="freshchat_chat_camera_permissions_granted">Permissão para acessar a câmera concedida</string>
+	<string name="freshchat_chat_camera_permissions_not_granted">Permissão para acessar a câmera negada</string>
+	<string name="freshchat_chat_camera_permissions_rationale">A permissão da câmera é necessária para tirar fotos</string>
+
+	<string name="freshchat_chat_voice_messaging_permissions_granted">As permissões necessárias para mensagens de voz foram concedidas</string>
+	<string name="freshchat_chat_voice_messaging_permissions_not_granted">As permissões necessárias para mensagens de voz não foram concedidas</string>
+	<string name="freshchat_chat_voice_messaging_permissions_rationale">A permissão de gravação de áudio e permissão de gravação de armazenamento externo são necessárias para capturar e enviar mensagens de voz</string>
+	<string name="freshchat_chat_voice_messaging_audio_recording_permission_rationale">A permissão de gravação de áudio é necessária para capturar e enviar mensagens de voz</string>
+	<string name="freshchat_chat_voice_messaging_write_storage_permission_rationale">A permissão de gravação de armazenamento externo é necessária para capturar e enviar mensagens de voz</string>
+
+	<string name="freshchat_voice_message_preview">[Voz ({{duration}})]</string>
+	<string name="freshchat_voice_message_preview_duration_tag">{{duration}}</string>
+	<string name="freshchat_speaker_phone_on">Audio will play through your ear piece</string>
+	<string name="freshchat_speaker_phone_off">"Audio will play through your phone's speaker"</string>
+	<string name="freshchat_voice_message_too_short">The message you are trying to send spans less than a second. Are you sure you want to send it ?</string>
+	<string name="freshchat_voice_message_too_long">Reached voice message max duration limit, please release to send the message, otherwise message will get discarded soon</string>
+
+	<string name="freshchat_contact_us">Entre em contato</string>
+	<string name="freshchat_faq_not_helpful_contact_us">Still looking for help? Talk to us</string>
+	<string name="freshchat_message_sending_failed">Mensagem não enviada. Vamos tentar de novo...</string>
+	<string name="freshchat_message_content_copied_to_clipboard">Mensagem copiada</string>
+	<string name="freshchat_chat_unknown_content_type">O conteúdo da mensagem não é compatível com esta versão. Atualize o aplicativo.</string>
+	<string name="freshchat_original_message_title">Original</string>
+
+	<string name="freshchat_error_no_matching_faq_categories_found">No matching FAQ categories found !</string>
+	<string name="freshchat_error_no_matching_faqs_found">No matching FAQs found !</string>
+
+	<string name="freshchat_unknown_message_fragment">Incapaz de mostrar a mensagem. Entre em contato com o suporte.</string>
+
+	<!-- Activity Title -->
+	<string name="freshchat_activity_title_category_list">FAQs</string>
+	<string name="freshchat_activity_title_article_list">FAQs</string>
+	<string name="freshchat_activity_title_article_detail">FAQ</string>
+	<string name="freshchat_activity_title_channel_list">Atendimento</string>
+
+	<!-- Menu title -->
+	<string name="freshchat_menu_item_search_faqs">Buscar</string>
+	<string name="freshchat_menu_item_contact_us">Entre em contato</string>
+	<string name="freshchat_menu_item_toggle_speaker">Alternar viva-voz</string>
+
+	<!-- Strings for Customer Satisfaction related UI Elements -->
+	<string name="freshchat_chat_resolution_survey_question"></string>
+	<string name="freshchat_chat_resolution_confirmation_prompt">Seu problema/dúvida foi resolvido?</string>
+	<string name="freshchat_chat_resolution_confirmation_prompt_positive">@string/freshchat_yes</string>
+	<string name="freshchat_chat_resolution_confirmation_prompt_negative">@string/freshchat_no</string>
+	<string name="freshchat_chat_resolution_suggestions_prompt">Como poderíamos ter ajudado você melhor?</string>
+	<string name="freshchat_chat_resolution_user_comments_hint">Diga nos</string>
+	<string name="freshchat_chat_rating_submit">Enviar</string>
+
+	<!--Strings for Typically Replies in-->
+	<string name="freshchat_typically_replies_within_a_minute">Online. Já iremos lhe responder :).</string>
+	<string name="freshchat_typically_replies_within_x_minutes">Online. Já iremos lhe responder :).</string>
+	<string name="freshchat_typically_replies_within_an_hour">Online. Já iremos lhe responder :).</string>
+	<string name="freshchat_typically_replies_within_2_hours">Online. Já iremos lhe responder :).</string>
+	<string name="freshchat_typically_replies_within_few_hours">Online. Já iremos lhe responder :).</string>
+	<string name="freshchat_currently_replying_in_a_minute">Online. Já iremos lhe responder :).</string>
+	<string name="freshchat_currently_replying_in_x_minutes">Online. Já iremos lhe responder :).</string>
+	<string name="freshchat_currently_replying_in_an_hour">Online. Já iremos lhe responder :).</string>
+	<string name="freshchat_currently_replying_in_2_hours">Online. Já iremos lhe responder :).</string>
+	<string name="freshchat_currently_replying_in_few_hours">Online. Já iremos lhe responder :).</string>
+	<string name="freshchat_placeholder_minutes">{{minutes}}</string>
+
+	<!--Strings for notifications-->
+	<string name="freshchat_conversation_notification_channel_name">Mensagens</string>
+	<string name="freshchat_campaign_notification_channel_name">Mensagens</string>
+	<string name="freshchat_support_message_notification_title">{{app_name}}</string>
+	<string name="freshchat_promotional_message_notification_title">{{app_name}}</string>
+	<string name="freshchat_placeholder_app_name">{{app_name}}</string>
+
+	<!--Strings for Auto start prompt displayed to users on xiaomi devices -->
+	<string name="freshchat_xiaomi_auto_start_prompt_message">Ative o início automático para receber notificações quando o aplicativo estiver em segundo plano</string>
+	<string name="freshchat_xiaomi_auto_start_prompt_positive">@android:string/ok</string>
+	<string name="freshchat_xiaomi_auto_start_prompt_negative">@android:string/cancel</string>
+
+	<!-- File Provider Authority Name of the form your_app_package_name.provider Eg: com.example.myapp.provider -->
+	<!-- <string name="freshchat_file_provider_authority" translatable="false"></string> -->
+
+	<!-- Allow customization of date formatter used for displaying date and time for messages -->
+	<string name="freshchat_chat_message_time_today">"hh:mm a"</string>
+	<string name="freshchat_chat_message_time_this_year_short">"MMM dd"</string>
+	<string name="freshchat_chat_message_time_this_year_long">"MMM dd',' hh:mm a"</string>
+	<string name="freshchat_chat_message_time_other_year">"MMM yyyy"</string>
+	<string name="freshchat_chat_calendar_date_format">"EEEE',' dd MMM yyyy"</string>
+	<string name="freshchat_chat_calendar_timeslot_format">"hh:mm a"</string>
+
+	<!--Strings for Business hour offline response-->
+	<string name="freshchat_all_members_away_message">Ausente.. Retornaremos em horário comercial</string>
+
+	<!--Strings for Drop down messages-->
+	<string name="freshchat_drop_down_hint_text">Clique aqui para selecionar</string>
+
+	<!--Strings for Carousel -->
+	<string name="freshchat_carousel_default_preview_text">Escolha uma opção</string>
+
+	<!--Strings for Carousel Card default-->
+	<string name="freshchat_carousel_card_default_callback_btn_text">Selecionar</string>
+	<string name="freshchat_carousel_card_default_view_btn_text">@string/freshchat_view_text</string>
+	<string name="freshchat_carousel_card_selected_text">Selecionado</string>
+
+	<!-- Strings used for Calendar integration -->
+	<string name="freshchat_calendar_find_slot">Find a slot</string>
+	<string name="freshchat_calendar_not_interested">Not interested</string>
+	<string name="freshchat_calendar_cancel_invite_message">Cancelled the invite</string>
+	<string name="freshchat_calendar_title">Schedule a meeting</string>
+	<string name="freshchat_calendar_duration">{{duration}} mins</string>
+	<string name="freshchat_calendar_duration_place_holder">{{duration}}</string>
+	<string name="freshchat_calendar_email_request_desc">Kindly provide us your email address to schedule a meeting with our team</string>
+	<string name="freshchat_calendar_email_hint">Enter your email address</string>
+	<string name="freshchat_calendar_next">Next</string>
+	<string name="freshchat_calendar_cancel_booking_prompt_message">Are you sure you want to cancel this booking?</string>
+	<string name="freshchat_calendar_cancel_booking_prompt_continue">Continue</string>
+	<string name="freshchat_calendar_cancel_booking_prompt_cancel">Cancel Booking</string>
+	<string name="freshchat_calendar_show_more_time_slots">Show more</string>
+	<string name="freshchat_calendar_no_timeslots_found">No slots available</string>
+	<string name="freshchat_calendar_error_encountered">An error was encountered</string>
+	<string name="freshchat_calendar_timeslots_retry">Retry</string>
+	<string name="freshchat_calendar_cancel_invite">Cancel</string>
+	<string name="freshchat_calendar_today">Today</string>
+	<string name="freshchat_calendar_tomorrow">Tomorrow</string>
+	<string name="freshchat_calendar_part_of_day_morning">Morning</string>
+	<string name="freshchat_calendar_part_of_day_afternoon">Afternoon</string>
+	<string name="freshchat_calendar_part_of_day_evening">Evening</string>
+	<string name="freshchat_calendar_part_of_day_night">Night</string>
+	<string name="freshchat_calendar_confirm">Confirm</string>
+	<string name="freshchat_calendar_change_slot">Change Slot</string>
+	<string name="freshchat_calendar_meeting_with_our_team">Meeting with our team</string>
+	<string name="freshchat_calendar_meeting_state_scheduled">Scheduled</string>
+	<string name="freshchat_calendar_meeting_state_failed">Failed</string>
+	<string name="freshchat_calendar_meeting_state_pending">Awaiting Confirmation</string>
+	<string name="freshchat_calendar_invite_awaiting_confirmation">Awaiting time slot confirmation</string>
+	<string name="freshchat_calendar_meeting_banner_view_btn">@string/freshchat_view_text</string>
+
+	<!--Omni KBASE-->
+
+	<string name="freshchat_no_faq_categories">No FAQs to display</string>
+	<string name="freshchat_faq_name_placeholder">{{faq_name}}</string>
+	<string name="freshchat_no_faqs">No articles found for &lt;b&gt;\'%1$s\'&lt;/b&gt;</string>
+	<string name="freshchat_no_articles_found">No articles found</string>
+	<string name="freshchat_minimum_search_criteria">Enter 3 or more characters to search</string>
+	<string name="freshchat_pagination_error_with_retry">Failed to load. Tap to retry.</string>
+	<string name="freshchat_pagination_no_internet_with_retry">No internet connection. Tap to retry.</string>
+</resources>

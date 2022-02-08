@@ -1,0 +1,53 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --machine --start-paused -d 00008030-0001051436E0802E --dart-define=flutter.inspector.structuredErrors=true --web-allow-expose-url --devtools-server-address http://127.0.0.1:9100/ --target lib/app/main_dev.dart
+
+## exception
+
+RPCError: getIsolate: (112) Service has disappeared
+
+```
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 2.0.4, on Mac OS X 10.15.6 19G2021 darwin-x64, locale pt-BR)
+    • Flutter version 2.0.4 at /Users/rafaelzanin/Documents/flutter
+    • Framework revision b1395592de (3 months ago), 2021-04-01 14:25:01 -0700
+    • Engine revision 2dce47073a
+    • Dart version 2.12.2
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 30.0.0-rc2)
+    • Android SDK at /Users/rafaelzanin/Library/Android/sdk
+    • Platform android-30, build-tools 30.0.0-rc2
+    • Java binary at: /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_212-release-1586-b4-5784211)
+    • All Android licenses accepted.
+
+[!] Xcode - develop for iOS and macOS
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Xcode 12.0, Build version 12A7209
+    ! Xcode 12.0.0 out of date (12.0.1 is recommended).
+      Download the latest version or update via the Mac App Store.
+    • CocoaPods version 1.10.1
+
+[✓] Chrome - develop for the web
+    • Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[✓] Android Studio (version 3.6)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin version 45.0.1
+    • Dart plugin version 192.7761
+    • Java version OpenJDK Runtime Environment (build 1.8.0_212-release-1586-b4-5784211)
+
+[✓] Connected device (3 available)
+    • iPhone de Rafael (mobile)           • 00008030-0001051436E0802E            • ios            • iOS 13.5.1
+    • iPhone SE (2nd generation) (mobile) • 21803FAD-1A03-4346-9275-241CFBDB763D • ios            • com.apple.CoreSimulator.SimRuntime.iOS-14-0 (simulator)
+    • Chrome (web)                        • chrome                               • web-javascript • Google Chrome 91.0.4472.114
+
+! Doctor found issues in 1 category.
+```
