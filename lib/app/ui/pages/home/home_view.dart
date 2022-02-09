@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    FlutterStatusbarcolor.setStatusBarColor(primaryColor);
+    // FlutterStatusbarcolor.setStatusBarColor(primaryColor);
     Requester client = Requester();
 
     HomeApiClient _apiClient = HomeApiClient(httpClient: client);

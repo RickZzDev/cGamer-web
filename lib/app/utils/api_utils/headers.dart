@@ -41,7 +41,7 @@ class Headers {
       "X-Token": await getToken(),
       // "OS": Platform.isAndroid ? "Android" : "iOS",
       "Content-Type": "application/json",
-      "App-Version": version ?? ""
+      // "App-Version": version ?? ""
     };
     return authenticatedHeaders;
   }

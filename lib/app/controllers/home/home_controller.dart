@@ -96,17 +96,17 @@ class HomeController extends GetxController {
 
   @override
   void onInit() async {
-    isPrime = await PrimeUtils.isPrime();
-    isEmbaixador = await EmbaixadorUtils.isEmbaixador();
-    hasCompletedAvatarRequest.value = getAvatars();
+    // isPrime = await PrimeUtils.isPrime();
+    // isEmbaixador = await EmbaixadorUtils.isEmbaixador();
+    // hasCompletedAvatarRequest.value = getAvatars();
 
-    hasCompletedStatusRequest.value = getStatusRegister();
-    hasCompletedHeaderRequest.value = getHomeInfo();
-    //hasCompletedMissionsRequest.value = getMissions();
-    // hasCompletedBalanceRequest.value = getBalance();
-    // hasCompletedExtractRequest.value = getExtract();
-    hasCompletedNewsFeedRequest.value = getNewsFeed();
-    getPodcasts();
+    // hasCompletedStatusRequest.value = getStatusRegister();
+    // // hasCompletedHeaderRequest.value = getHomeInfo();
+    // //hasCompletedMissionsRequest.value = getMissions();
+    // // hasCompletedBalanceRequest.value = getBalance();
+    // // hasCompletedExtractRequest.value = getExtract();
+    // hasCompletedNewsFeedRequest.value = getNewsFeed();
+    // getPodcasts();
     super.onInit();
   }
 

@@ -1,6 +1,7 @@
 import 'package:cGamer/app/data/repository/auth_register/auth_repository.dart';
 import 'package:cGamer/app/routes/app_routes.dart';
 import 'package:cGamer/app/ui/components/login_components/modal_bottom/modal_bottom_login.dart';
+import 'package:cGamer/app/utils/api_utils/api_exports.dart';
 import 'package:cGamer/app/utils/api_utils/exception_utils/exception_utils.dart';
 import 'package:cGamer/app/utils/utils_export.dart';
 import 'package:flutter/cupertino.dart';
@@ -8,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 import 'package:get/get.dart';
+import 'package:http/http.dart' as http;
 
 class LoginController extends GetxController {
   final formKey = GlobalKey<FormState>();
@@ -107,6 +109,17 @@ class LoginController extends GetxController {
     clearCPFMask(cpfController.value);
     authResponse = await repository.auth(
         newCpfControllerMask.value.text, passwordController.value.text);
+
+    // http.post(
+    //   API().getUriComposed("/auth", null),
+    //   headers: {
+    //     "Access-Control-Allow-Headers":
+    //         "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,locale",
+    //     "Access-Control-Allow-Methods": "POST, OPTIONS",
+    //     "Access-Control-Allow-Origin": "*"
+    //   },
+    //   body: {"cpf": "52755277807", "password": "Carlera33"},
+    // );
 
     verifyIfIsException(authResponse);
   }

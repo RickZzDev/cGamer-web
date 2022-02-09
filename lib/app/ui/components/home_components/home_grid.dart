@@ -31,10 +31,10 @@ class HomeGrid extends StatelessWidget {
             color: secondaryColor,
             borderRadius: BorderRadius.all(Radius.circular(12)),
           ),
-          child: HomeGamerGrid(
-            isApproved: true,
-            controller: controller,
-          ),
+          // child: HomeGamerGrid(
+          //   isApproved: true,
+          //   controller: controller,
+          // ),
         ),
       ),
     );
