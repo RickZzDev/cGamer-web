@@ -80,14 +80,6 @@ class ProfileOptionsComponent extends StatelessWidget {
                     : SizedBox()
                 : SizedBox()),
             Padding(
-              padding: EdgeInsets.only(top: 12, left: 24, right: 24),
-              child: ProfileButton(
-                onTap: _controller.goToInviteFriend,
-                text: "Indique um amigo",
-                imgSrc: "assets/images/profile_images/Indique_Amigo.svg",
-              ),
-            ),
-            Padding(
               padding: EdgeInsets.only(left: 24, right: 24, top: 8),
               child: ProfileButton(
                 onTap: _controller.goAccountDataList,
@@ -106,27 +98,19 @@ class ProfileOptionsComponent extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: 24, right: 24, top: 8),
               child: ProfileButton(
-                onTap: _controller.goToSecurity,
-                text: "Segurança",
-                imgSrc: "assets/images/profile_images/Seguranca.svg",
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(left: 24, right: 24, top: 8),
-              child: ProfileButton(
                 onTap: () => _controller.goToChat(),
                 text: "Atendimento",
                 imgSrc: "assets/images/profile_images/Ajuda.svg",
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(left: 24, right: 24, top: 8),
-              child: ProfileButton(
-                onTap: () => _controller.goToFAQ(),
-                text: "Dúvidas frequentes",
-                imgSrc: "assets/images/profile_images/Duvidas_Frequentes.svg",
-              ),
-            ),
+            // Padding(
+            //   padding: EdgeInsets.only(left: 24, right: 24, top: 8),
+            //   child: ProfileButton(
+            //     onTap: () => _controller.goToFAQ(),
+            //     text: "Dúvidas frequentes",
+            //     imgSrc: "assets/images/profile_images/Duvidas_Frequentes.svg",
+            //   ),
+            // ),
             Padding(
               padding: EdgeInsets.only(left: 24, right: 24, top: 8),
               child: ProfileButton(
