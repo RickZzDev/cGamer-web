@@ -30,7 +30,7 @@ class Headers {
       // await _getAppVersion();
       =>
       {
-        // "OS": Platform.isAndroid ? "Android" : "iOS",
+        "OS": "Web",
         "Content-Type": "application/json",
         // "Token": "",
         "App-Version": version ?? ""
@@ -39,7 +39,7 @@ class Headers {
   Future<Map<String, String>> getAuthenticatedHeader() async {
     Map<String, String> authenticatedHeaders = {
       "X-Token": await getToken(),
-      // "OS": Platform.isAndroid ? "Android" : "iOS",
+      "OS": "Web",
       "Content-Type": "application/json",
       // "App-Version": version ?? ""
     };

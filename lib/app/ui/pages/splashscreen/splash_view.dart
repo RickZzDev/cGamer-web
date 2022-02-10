@@ -52,29 +52,12 @@ class _SplashScreenPageState extends State<SplashScreenPage>
 
   Future<String> verifyRoute() async {
     splashroute = Routes.LOGIN;
-    box = Provider.of<GetStorage>(context, listen: false);
-    if (box?.read('splash_route') == null) {
-      splashroute = Routes.ONBOARD;
-    } else if (box?.read('splash_route') == Routes.LOGIN) {
-      // CacheUtils.removeCache(key: 'x-token');
-      // CacheUtils.addToCach('x-token', value)
-      var key = await CacheUtils.readValue(key: 'x-token');
-      if (key == null) {
-        splashroute = Routes.LOGIN;
-      } else {
-        bool useFaceId = await SecurityUtils.isActivatedFaceId();
-        if (useFaceId) {
-          bool authenticated = await SecurityUtils.authenticate();
-          if (authenticated) {
-            splashroute = Routes.MAIN_PAGES_HOLDER;
-          } else {
-            CacheUtils.removeCache(key: 'x-token');
-            splashroute = Routes.LOGIN;
-          }
-        } else {
-          splashroute = Routes.MAIN_PAGES_HOLDER;
-        }
-      }
+
+    var key = await CacheUtils.readValue(key: 'x-token');
+    if (key == null) {
+      splashroute = Routes.LOGIN;
+    } else {
+      splashroute = Routes.MAIN_PAGES_HOLDER;
     }
 
     return splashroute;
