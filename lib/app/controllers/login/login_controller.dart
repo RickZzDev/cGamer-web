@@ -96,7 +96,7 @@ class LoginController extends GetxController {
       formKey.currentState?.validate();
     } else {
       CacheUtils.addToCache(
-          key: 'x-token', value: responseHttp.headers['x-token'] ?? "abcde");
+          key: 'x-token', value: responseHttp.headers['x-token']);
       Get.offAllNamed(Routes.MAIN_PAGES_HOLDER);
     }
 
