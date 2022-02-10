@@ -44,7 +44,7 @@ class CustomBottomNavigation extends StatelessWidget {
                 // "assets/images/home_images/Gamer_Store.svg",
                 "assets/images/tab_bar_icons/mafa_logo_white.svg",
                 color:
-                    index == 1 ? Theme.of(context).primaryColor : Colors.grey,
+                    index == 0 ? Theme.of(context).primaryColor : Colors.grey,
               ),
             ),
             label: "\$MAFA"),
@@ -80,7 +80,7 @@ class CustomBottomNavigation extends StatelessWidget {
               child: SvgPicture.asset(
                 "assets/images/tab_bar_icons/Perfil.svg",
                 color:
-                    index == 4 ? Theme.of(context).primaryColor : Colors.grey,
+                    index == 1 ? Theme.of(context).primaryColor : Colors.grey,
               ),
             ),
             label: "Perfil"),
