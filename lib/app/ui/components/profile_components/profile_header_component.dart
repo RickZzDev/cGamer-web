@@ -196,68 +196,6 @@ class ProfileHeader extends StatelessWidget {
                                           useOldImageOnUrlChange: true,
                                           fit: BoxFit.cover)))
                               : Container(),
-                          Container(
-                            transform:
-                                Matrix4.translationValues(-4.0, 0.0, 0.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/gamification_icons/cristal.png',
-                                      height: 16,
-                                      width: 16,
-                                    ),
-                                    SizedBox(
-                                      width: 4,
-                                    ),
-                                    Text(
-                                      "${_profileStats.level?.customerBalancePoints.formattedPoints()} Rubis",
-                                      style: textStyle.copyWith(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ],
-                                ),
-                                // Container(
-                                //   color: Colors.blue,
-                                //   padding: EdgeInsets.symmetric(
-                                //     vertical: 2,
-                                //   ),
-                                //   child: Row(
-                                //     children: [
-                                //       InkWell(
-                                //         onTap: () {
-                                //           Get.toNamed(Routes.MY_PROGRESS);
-                                //         },
-                                //         child: RichText(
-                                //           text: TextSpan(
-                                //             children: [
-                                //               TextSpan(
-                                //                 text: "Ver progresso",
-                                //                 style: textStyle.copyWith(
-                                //                     fontSize: 14,
-                                //                     color: Theme.of(context)
-                                //                         .primaryColor),
-                                //               ),
-                                //               WidgetSpan(
-                                //                 child: Icon(
-                                //                   Icons.arrow_forward_ios,
-                                //                   size: 14,
-                                //                   color: primaryColor,
-                                //                 ),
-                                //               ),
-                                //             ],
-                                //           ),
-                                //         ),
-                                //       )
-                                //     ],
-                                //   ),
-                                // )
-                              ],
-                            ),
-                          )
                         ],
                       )
                     ],
