@@ -82,6 +82,14 @@ class ProfileOptionsComponent extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: 24, right: 24, top: 8),
               child: ProfileButton(
+                onTap: () => _controller.goToStore(),
+                text: "Baixe o App completo na Loja",
+                imgSrc: "assets/images/marketplace/Gamer.svg",
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 24, right: 24, top: 8),
+              child: ProfileButton(
                 onTap: _controller.goAccountDataList,
                 text: "Dados da conta",
                 imgSrc: "assets/images/profile_images/Dados_do_perfil.svg",

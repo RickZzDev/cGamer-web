@@ -332,15 +332,25 @@ class ProfileController extends GetxController {
     Get.toNamed(Routes.FAQ_CATEGORY);
   }
 
+  void goToStore() async {
+    GenericUtils.openUrl('https://joggabank.com.br/app');
+  }
+
   void goToChat() async {
-    FreshchatUser freshchatUser = FreshchatUser(null, null);
-    freshchatUser.setFirstName(statusProfileResult.value.customerName ?? "");
-    freshchatUser.setLastName(" ");
-    freshchatUser.setEmail(statusProfileResult.value.customerEmail ?? "");
-    freshchatUser.setPhone(
-        "+55", statusProfileResult.value.customerPhone ?? "");
-    Freshchat.setUser(freshchatUser);
-    Freshchat.showConversations();
+    SnackBarUtils.showSnackBar(
+        desc:
+            'Baixe o app na loja para ter sua experiência completa com o Jogga!',
+        title: 'Olá, Gamer!',
+        color: Colors.orange[400]);
+
+    // FreshchatUser freshchatUser = FreshchatUser(null, null);
+    // freshchatUser.setFirstName(statusProfileResult.value.customerName ?? "");
+    // freshchatUser.setLastName(" ");
+    // freshchatUser.setEmail(statusProfileResult.value.customerEmail ?? "");
+    // freshchatUser.setPhone(
+    //     "+55", statusProfileResult.value.customerPhone ?? "");
+    // Freshchat.setUser(freshchatUser);
+    // Freshchat.showConversations();
     // await zendesk.clearVisitorNotes();
 
     // await zendesk.setVisitorInfo(
