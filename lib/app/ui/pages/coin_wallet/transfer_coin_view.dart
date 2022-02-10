@@ -64,7 +64,7 @@ class _TransferCoinPageState extends State<TransferCoinPage> {
                         : () => _controller.transferCoin(),
               ),
             ),
-            body: Column(children: [
+            body: ListView(shrinkWrap: true, children: [
               Obx(() => _controller.isPrime.value
                   ? Container()
                   : ProBannerSlim(

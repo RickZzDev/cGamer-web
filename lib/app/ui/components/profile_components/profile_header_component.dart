@@ -148,7 +148,7 @@ class ProfileHeader extends StatelessWidget {
                         children: [
                           InkWell(
                             onTap: () {
-                              Get.toNamed(Routes.MY_PROGRESS);
+                              // Get.toNamed(Routes.MY_PROGRESS);
                             },
                             child: Container(
                               width: 48,

@@ -31,9 +31,8 @@ class CoinTransferSuccess extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      body: ListView(
+        shrinkWrap: true,
         children: [
           Text(
             isWithdraw
