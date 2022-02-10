@@ -23,18 +23,18 @@ class CustomBottomNavigation extends StatelessWidget {
       type: BottomNavigationBarType.fixed,
       onTap: (value) => changeIndex(value),
       items: [
-        BottomNavigationBarItem(
-          icon: Container(
-            width: 35,
-            height: 25,
-            // color: Colors.red,
-            child: SvgPicture.asset(
-              "assets/images/tab_bar_icons/Inicio.svg",
-              color: index == 0 ? Theme.of(context).primaryColor : Colors.grey,
-            ),
-          ),
-          label: "Início",
-        ),
+        // BottomNavigationBarItem(
+        //   icon: Container(
+        //     width: 35,
+        //     height: 25,
+        //     // color: Colors.red,
+        //     child: SvgPicture.asset(
+        //       "assets/images/tab_bar_icons/Inicio.svg",
+        //       color: index == 0 ? Theme.of(context).primaryColor : Colors.grey,
+        //     ),
+        //   ),
+        //   label: "Início",
+        // ),
         BottomNavigationBarItem(
             icon: Container(
               width: 35,
@@ -48,30 +48,30 @@ class CustomBottomNavigation extends StatelessWidget {
               ),
             ),
             label: "\$MAFA"),
-        BottomNavigationBarItem(
-            icon: Container(
-              width: 32,
-              height: 25,
-              // color: Colors.red,
-              child: SvgPicture.asset(
-                "assets/images/tab_bar_icons/Cristais.svg",
-                color:
-                    index == 2 ? Theme.of(context).primaryColor : Colors.grey,
-              ),
-            ),
-            label: "Rubis"),
-        BottomNavigationBarItem(
-            icon: Container(
-              width: 35,
-              height: 25,
-              // color: Colors.red,
-              child: SvgPicture.asset(
-                "assets/images/tab_bar_icons/Bank.svg",
-                color:
-                    index == 3 ? Theme.of(context).primaryColor : Colors.grey,
-              ),
-            ),
-            label: "Bank"),
+        // BottomNavigationBarItem(
+        //     icon: Container(
+        //       width: 32,
+        //       height: 25,
+        //       // color: Colors.red,
+        //       child: SvgPicture.asset(
+        //         "assets/images/tab_bar_icons/Cristais.svg",
+        //         color:
+        //             index == 2 ? Theme.of(context).primaryColor : Colors.grey,
+        //       ),
+        //     ),
+        //     label: "Rubis"),
+        // BottomNavigationBarItem(
+        //     icon: Container(
+        //       width: 35,
+        //       height: 25,
+        //       // color: Colors.red,
+        //       child: SvgPicture.asset(
+        //         "assets/images/tab_bar_icons/Bank.svg",
+        //         color:
+        //             index == 3 ? Theme.of(context).primaryColor : Colors.grey,
+        //       ),
+        //     ),
+        //     label: "Bank"),
         BottomNavigationBarItem(
             icon: Container(
               width: 35,

@@ -35,7 +35,7 @@ class _CoinWalletState extends State<CoinWallet> {
 
   @override
   Widget build(BuildContext context) {
-    FlutterStatusbarcolor.setStatusBarColor(secondaryColor);
+    // FlutterStatusbarcolor.setStatusBarColor(secondaryColor);
 
     return Obx(
       () => ModalProgressHUD(

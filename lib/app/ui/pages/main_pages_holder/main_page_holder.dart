@@ -16,10 +16,10 @@ class MainPagesHolder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Widget> pages = [
-      HomePage(_controller.changeIndex),
+      // HomePage(_controller.changeIndex),
       CoinWallet(),
-      ScoreView(),
-      BankPage(_controller.changeIndex),
+      // ScoreView(),
+      // BankPage(_controller.changeIndex),
       ProfileView()
     ];
     return WillPopScope(
