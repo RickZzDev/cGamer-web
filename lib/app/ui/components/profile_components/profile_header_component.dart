@@ -33,8 +33,9 @@ class ProfileHeader extends StatelessWidget {
           topRight: Radius.circular(20),
         ),
       ),
-      child: Stack(children: [
-        ClipRRect(
+      child: Stack(
+        children: [
+          ClipRRect(
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20), topRight: Radius.circular(20)),
             child: Image.asset(
@@ -47,8 +48,9 @@ class ProfileHeader extends StatelessWidget {
                       MediaQuery.of(context).devicePixelRatio)
                   .round(),
               width: MediaQuery.of(context).size.width,
-            )),
-        Padding(
+            ),
+          ),
+          Padding(
             padding: EdgeInsets.only(bottom: 24, left: 24, top: 12),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -145,55 +147,55 @@ class ProfileHeader extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           InkWell(
-                              onTap: () {
-                                Get.toNamed(Routes.MY_PROGRESS);
-                              },
-                              child: Container(
-                                  width: 48,
+                            onTap: () {
+                              Get.toNamed(Routes.MY_PROGRESS);
+                            },
+                            child: Container(
+                              width: 48,
+                              height: 48,
+                              transform:
+                                  Matrix4.translationValues(-8.0, 0.0, 0.0),
+                              child: CachedNetworkImage(
+                                  imageUrl:
+                                      _profileStats.level?.iconLevelUrl ?? "",
+                                  placeholder: (context, url) =>
+                                      CircularProgressIndicator(
+                                        strokeWidth: 1,
+                                      ),
+                                  errorWidget: (context, url, error) =>
+                                      Icon(Icons.error),
                                   height: 48,
-                                  transform:
-                                      Matrix4.translationValues(-8.0, 0.0, 0.0),
-                                  child: CachedNetworkImage(
-                                      imageUrl:
-                                          _profileStats.level?.iconLevelUrl ??
-                                              "",
-                                      placeholder: (context, url) =>
-                                          CircularProgressIndicator(
-                                            strokeWidth: 1,
-                                          ),
-                                      errorWidget: (context, url, error) =>
-                                          Icon(Icons.error),
-                                      height: 48,
+                                  width: 48,
+                                  cacheKey:
+                                      _profileStats.level?.iconLevelUrl ?? "",
+                                  useOldImageOnUrlChange: true,
+                                  fit: BoxFit.cover),
+                            ),
+                          ),
+                          _profileStats.badge != null
+                              ? InkWell(
+                                  onTap: () {
+                                    Get.toNamed(Routes.MY_BADGES);
+                                  },
+                                  child: Container(
                                       width: 48,
-                                      cacheKey:
-                                          _profileStats.level?.iconLevelUrl ??
-                                              "",
-                                      useOldImageOnUrlChange: true,
-                                      fit: BoxFit.cover))),
-                          // _profileStats.badge != null
-                          //     ? InkWell(
-                          //         onTap: () {
-                          //           Get.toNamed(Routes.MY_BADGES);
-                          //         },
-                          //         child: Container(
-                          //             width: 48,
-                          //             height: 48,
-                          //             transform: Matrix4.translationValues(
-                          //                 -12.0, 0.0, 0.0),
-                          //             child: CachedNetworkImage(
-                          //                 imageUrl: _profileStats.badge.image,
-                          //                 placeholder: (context, url) =>
-                          //                     CircularProgressIndicator(
-                          //                       strokeWidth: 1,
-                          //                     ),
-                          //                 errorWidget: (context, url, error) =>
-                          //                     Icon(Icons.error),
-                          //                 height: 48,
-                          //                 width: 48,
-                          //                 cacheKey: _profileStats.badge.image,
-                          //                 useOldImageOnUrlChange: true,
-                          //                 fit: BoxFit.cover)))
-                          //     : Container(),
+                                      height: 48,
+                                      transform: Matrix4.translationValues(
+                                          -12.0, 0.0, 0.0),
+                                      child: CachedNetworkImage(
+                                          imageUrl: _profileStats.badge!.image!,
+                                          placeholder: (context, url) =>
+                                              CircularProgressIndicator(
+                                                strokeWidth: 1,
+                                              ),
+                                          errorWidget: (context, url, error) =>
+                                              Icon(Icons.error),
+                                          height: 48,
+                                          width: 48,
+                                          cacheKey: _profileStats.badge!.image,
+                                          useOldImageOnUrlChange: true,
+                                          fit: BoxFit.cover)))
+                              : Container(),
                           Container(
                             transform:
                                 Matrix4.translationValues(-4.0, 0.0, 0.0),
@@ -218,41 +220,41 @@ class ProfileHeader extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                Container(
-                                  // color: Colors.blue,
-                                  padding: EdgeInsets.symmetric(
-                                    vertical: 2,
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      InkWell(
-                                        onTap: () {
-                                          Get.toNamed(Routes.MY_PROGRESS);
-                                        },
-                                        child: RichText(
-                                          text: TextSpan(
-                                            children: [
-                                              TextSpan(
-                                                text: "Ver progresso",
-                                                style: textStyle.copyWith(
-                                                    fontSize: 14,
-                                                    color: Theme.of(context)
-                                                        .primaryColor),
-                                              ),
-                                              WidgetSpan(
-                                                child: Icon(
-                                                  Icons.arrow_forward_ios,
-                                                  size: 14,
-                                                  color: primaryColor,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                )
+                                // Container(
+                                //   color: Colors.blue,
+                                //   padding: EdgeInsets.symmetric(
+                                //     vertical: 2,
+                                //   ),
+                                //   child: Row(
+                                //     children: [
+                                //       InkWell(
+                                //         onTap: () {
+                                //           Get.toNamed(Routes.MY_PROGRESS);
+                                //         },
+                                //         child: RichText(
+                                //           text: TextSpan(
+                                //             children: [
+                                //               TextSpan(
+                                //                 text: "Ver progresso",
+                                //                 style: textStyle.copyWith(
+                                //                     fontSize: 14,
+                                //                     color: Theme.of(context)
+                                //                         .primaryColor),
+                                //               ),
+                                //               WidgetSpan(
+                                //                 child: Icon(
+                                //                   Icons.arrow_forward_ios,
+                                //                   size: 14,
+                                //                   color: primaryColor,
+                                //                 ),
+                                //               ),
+                                //             ],
+                                //           ),
+                                //         ),
+                                //       )
+                                //     ],
+                                //   ),
+                                // )
                               ],
                             ),
                           )
@@ -262,8 +264,10 @@ class ProfileHeader extends StatelessWidget {
                   ),
                 )
               ],
-            ))
-      ]),
+            ),
+          )
+        ],
+      ),
     );
   }
 }

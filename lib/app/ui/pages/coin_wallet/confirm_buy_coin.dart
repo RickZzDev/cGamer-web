@@ -253,8 +253,7 @@ class _ConfirmBuyCoinState extends State<ConfirmBuyCoin> {
                 ),
               ])),
               bottomNavigationBar: Padding(
-                padding: EdgeInsets.symmetric(
-                    horizontal: 45, vertical: Platform.isIOS ? 40 : 0),
+                padding: EdgeInsets.symmetric(horizontal: 45, vertical: 40),
                 child: Obx(() => GenericButton(
                     text: _controller.isPayPix.value
                         ? 'Confirmar pagamento'
