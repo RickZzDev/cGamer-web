@@ -19,7 +19,7 @@ import 'package:modal_progress_hud/modal_progress_hud.dart';
 class ProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    FlutterStatusbarcolor.setStatusBarColor(primaryColor);
+    // FlutterStatusbarcolor.setStatusBarColor(primaryColor);
     Requester client = Requester();
 
     ProfileApiClient _apiClient = ProfileApiClient(httpClient: client);
