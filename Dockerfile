@@ -6,7 +6,7 @@ RUN apt-get install -y curl git wget unzip libgconf-2-4 gdb libstdc++6 libglu1-m
 RUN apt-get clean
 
 # Clone the flutter repo
-RUN git clone https://github.com/RickZzDev/cGamer-web.git /usr/local/flutter
+RUN git clone https://github.com/flutter/flutter.git /usr/local/flutter
 
 # Set flutter path
 # RUN /usr/local/flutter/bin/flutter doctor -v
@@ -23,7 +23,7 @@ RUN flutter config --enable-web
 RUN mkdir /app/
 COPY . /app/
 WORKDIR /app/
-RUN flutter build web
+RUN flutter build web --release -t lib/app/main_prod.dart
 
 # Stage 2 - Create the run-time image
 FROM nginx:1.21.1-alpine
