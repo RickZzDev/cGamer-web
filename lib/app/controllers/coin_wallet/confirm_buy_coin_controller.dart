@@ -129,9 +129,9 @@ class ConfirmBuyCoinController extends GetxController {
                         height: 16,
                       ),
                       Text(
-                          'O Jogga Bank somente é responsável por facilitar a compra do Token \$\MAFA. Realizamos somente a intermediação da compra.  \n\nVocê concorda, que está a realizar uma transação por sua própria conta, tendo feito a sua própria pesquisa. Caso desconheça sobre esse assunto, aconselhamos procurar por mais informações ou abstenha-se de realizar a transação. \n\nAviso Legal: O Jogga Bank e o Mafagafo não fornece nenhuma garantia de rentabilidade, todas as informações da página são pautadas em estimativas sem nenhuma garantia de retorno. Dito isso, não nos responsabilizamos por eventuais perdas ou prejuízos.',
+                          'O Jogga Bank somente é responsável por facilitar a compra do Token \$\MAFA. Realizamos somente a intermediação da compra.  \n\nVocê concorda, que está a realizar uma transação por sua própria conta, tendo feito a sua própria pesquisa. \n\n Caso desconheça sobre esse assunto, aconselhamos procurar por mais informações ou abstenha-se de realizar a transação. \n\nAviso Legal: O Jogga Bank e o Mafagafo não fornece nenhuma garantia de rentabilidade, todas as informações da página são pautadas em estimativas sem nenhuma garantia de retorno. Dito isso, não nos responsabilizamos por eventuais perdas ou prejuízos.',
                           style: textStyle.copyWith(fontSize: 14),
-                          textAlign: TextAlign.justify),
+                          textAlign: TextAlign.center),
                       SizedBox(
                         height: 24,
                       ),

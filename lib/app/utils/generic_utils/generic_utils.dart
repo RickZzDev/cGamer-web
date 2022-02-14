@@ -122,8 +122,8 @@ abstract class GenericUtils {
 
   static void logoutUser() async {
     CacheUtils.removeCache(key: 'x-token');
-    OneSignal.shared.logoutEmail();
-    await FirebaseAuth.instance.signOut();
+    //OneSignal.shared.logoutEmail();
+    //await FirebaseAuth.instance.signOut();
     //OneSignal.shared.removeExternalUserId();
     Get.offAllNamed(Routes.LOGIN);
   }

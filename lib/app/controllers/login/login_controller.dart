@@ -92,8 +92,11 @@ class LoginController extends GetxController {
 
   verifyIfIsException(dynamic responseHttp) async {
     if (ExceptionUtils.verifyIfIsException(responseHttp)) {
-      changeLoginErrorValue();
-      formKey.currentState?.validate();
+      //changeLoginErrorValue();
+      //formKey.currentState?.validate();
+      SnackBarUtils.showSnackBar(
+          desc: 'Verifique seu CPF ou Senha, e tente novamente.',
+          title: 'Atenção');
     } else {
       CacheUtils.addToCache(
           key: 'x-token', value: responseHttp.headers['x-token']);
@@ -109,7 +112,7 @@ class LoginController extends GetxController {
     clearCPFMask(cpfController.value);
     authResponse = await repository.auth(
         newCpfControllerMask.value.text, passwordController.value.text);
-
+    authing.value = false;
     // http.post(
     //   API().getUriComposed("/auth", null),
     //   headers: {

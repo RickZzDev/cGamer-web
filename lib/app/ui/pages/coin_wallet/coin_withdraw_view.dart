@@ -46,10 +46,10 @@ class _WithdrawCoinViewState extends State<WithdrawCoinView> {
                   ),
                 ),
                 body: Column(children: [
-                  Obx(() => _controller.isPrime.value
-                      ? Container()
-                      : ProBannerSlim(
-                          title: "Prime: Zere a taxa de serviço na retirada.")),
+                  // Obx(() => _controller.isPrime.value
+                  //     ? Container()
+                  //     : ProBannerSlim(
+                  //         title: "Prime: Zere a taxa de serviço na retirada.")),
                   Padding(
                     padding: const EdgeInsets.all(24),
                     child: ListView(
@@ -191,7 +191,7 @@ class _WithdrawCoinViewState extends State<WithdrawCoinView> {
                               ),
                             ),
                             SizedBox(
-                              height: 8,
+                              height: 20,
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,

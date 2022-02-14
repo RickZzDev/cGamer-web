@@ -40,10 +40,10 @@ class _ConfirmBuyCoinState extends State<ConfirmBuyCoin> {
             ),
             body: SingleChildScrollView(
                 child: Column(children: [
-              Obx(() => _controller.isPrime.value
-                  ? Container()
-                  : ProBannerSlim(
-                      title: "Prime: 50% OFF na taxa de serviço de compra.")),
+              // Obx(() => _controller.isPrime.value
+              //     ? Container()
+              //     : ProBannerSlim(
+              //         title: "Prime: 50% OFF na taxa de serviço de compra.")),
               Container(
                 padding: EdgeInsets.only(right: 24, left: 24, top: 20),
                 child: Column(mainAxisSize: MainAxisSize.max, children: [
@@ -189,7 +189,7 @@ class _ConfirmBuyCoinState extends State<ConfirmBuyCoin> {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(8))),
                           width: screenWidthhSize,
-                          height: 170,
+                          height: 174,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -212,7 +212,7 @@ class _ConfirmBuyCoinState extends State<ConfirmBuyCoin> {
                                           style: textStyle.copyWith(
                                               fontSize: 14,
                                               color: Colors.white54)),
-                                      SizedBox(height: 4),
+                                      SizedBox(height: 8),
                                       Container(
                                           color: Colors.white,
                                           child: SizedBox(
@@ -234,7 +234,7 @@ class _ConfirmBuyCoinState extends State<ConfirmBuyCoin> {
                                           style: textStyle.copyWith(
                                               fontSize: 14,
                                               color: Colors.white54)),
-                                      SizedBox(height: 4),
+                                      SizedBox(height: 8),
                                       GenericButton(
                                           text: 'Copiar código',
                                           onPressedFunction: () {

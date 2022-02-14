@@ -112,7 +112,7 @@ class _ModalBottomSheetLoginState extends State<ModalBottomSheetLogin>
                               ),
                             ),
                             SizedBox(
-                              height: 15,
+                              height: 12,
                             ),
                             Padding(
                               padding: const EdgeInsets.symmetric(
