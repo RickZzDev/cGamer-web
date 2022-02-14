@@ -25,11 +25,16 @@ class WithdrawConfirmCoinController extends GetxController {
   MoneyMaskedTextController mafaQuantityController =
       MoneyMaskedTextController();
   MoneyMaskedTextController taxValueController = MoneyMaskedTextController();
-  double taxTransfer = 0.005;
+  double taxTransfer = 0.01;
   TransferReviewModel? mafaReviewModel;
 
   void verifyIfHavaAmmount(
       {required double inputedAmmount, required double availableAmmount}) {
+    if (inputedAmmount < 200) {
+      taxTransfer = 0.02;
+    } else {
+      taxTransfer = 0.01;
+    }
     double taxDouble = inputedAmmount * taxTransfer;
     taxValue.value = taxDouble.toPrecision(2).toString().replaceAll('.', ',');
     inputedAmmount + (inputedAmmount * taxTransfer) > availableAmmount

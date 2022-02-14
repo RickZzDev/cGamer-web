@@ -40,19 +40,7 @@ class _WithdrawCoinViewState extends State<WithdrawCoinView> {
                     onPressedFunction: () {
                       if (!_controller.shouldShowError.value &&
                           _controller.walletIdController.text != "") {
-                        double totalWithdrawMafa = double.parse(_controller
-                            .mafaQuantityController.text
-                            .replaceAll(',', '.'));
-
-                        if (totalWithdrawMafa < 500) {
-                          SnackBarUtils.showSnackBar(
-                              color: Colors.orange[400],
-                              desc:
-                                  'O valor mínimo para solicitar retirada é de 500 \$\MAFA',
-                              title: 'Ops...');
-                        } else {
-                          _controller.tapContinue();
-                        }
+                        _controller.tapContinue();
                       }
                     },
                   ),
@@ -128,8 +116,6 @@ class _WithdrawCoinViewState extends State<WithdrawCoinView> {
                         SizedBox(
                           height: 8,
                         ),
-                        Text('Valor mínimo para saque é de 500 \$\MAFA',
-                            style: textStyle.copyWith(fontSize: 13)),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
