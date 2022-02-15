@@ -18,7 +18,8 @@
             "type": "dart",
             "args": [
                 "--web-port=5000",
-                "--web-enable-expression-evaluation"
+                "--web-enable-expression-evaluation",
+                "--web-renderer html"
             ],
         },
           {
