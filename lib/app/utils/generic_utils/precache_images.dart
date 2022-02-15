@@ -4,37 +4,37 @@ abstract class PreCacheImages {
   static loadImages() {
     Future.wait([
       precachePicture(
-        ExactAssetPicture(SvgPicture.svgStringDecoder,
+        ExactAssetPicture(SvgPicture.svgStringDecoderBuilder,
             'assets/images/onboard_images/Onboarding_01.svg'),
         null,
       ),
       precachePicture(
-        ExactAssetPicture(SvgPicture.svgStringDecoder,
+        ExactAssetPicture(SvgPicture.svgStringDecoderBuilder,
             'assets/images/onboard_images/Onboarding_02.svg'),
         null,
       ),
       precachePicture(
-        ExactAssetPicture(SvgPicture.svgStringDecoder,
+        ExactAssetPicture(SvgPicture.svgStringDecoderBuilder,
             'assets/images/onboard_images/Onboarding_03.svg'),
         null,
       ),
       precachePicture(
-        ExactAssetPicture(SvgPicture.svgStringDecoder,
+        ExactAssetPicture(SvgPicture.svgStringDecoderBuilder,
             'assets/images/onboard_images/Onboarding_04.svg'),
         null,
       ),
       precachePicture(
-        ExactAssetPicture(
-            SvgPicture.svgStringDecoder, 'assets/images/BG_Parabens.svg'),
+        ExactAssetPicture(SvgPicture.svgStringDecoderBuilder,
+            'assets/images/BG_Parabens.svg'),
         null,
       ),
       precachePicture(
         ExactAssetPicture(
-            SvgPicture.svgStringDecoder, 'assets/images/BG_Gamers.svg'),
+            SvgPicture.svgStringDecoderBuilder, 'assets/images/BG_Gamers.svg'),
         null,
       ),
       precachePicture(
-        ExactAssetPicture(SvgPicture.svgStringDecoder,
+        ExactAssetPicture(SvgPicture.svgStringDecoderBuilder,
             'assets/images/wallet_images/activated_bg_card.svg'),
         null,
       ),

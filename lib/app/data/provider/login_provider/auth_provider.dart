@@ -10,11 +10,15 @@ class AuthApiClient {
   AuthApiClient({required this.httpClient});
 
   auth(String cpf, String password) async {
-    var url = AuthEndpoints().authEndpoint;
+    try {
+      var url = AuthEndpoints().authEndpoint;
 
-    var body = AuthRequestModel(cpf: cpf, password: password).toJson();
-    var response = await Requester().postV2(url: url, body: body);
+      var body = AuthRequestModel(cpf: cpf, password: password).toJson();
+      var response = await Requester().postV2(url: url, body: body);
 
-    return response;
+      return response;
+    } catch (e) {
+      rethrow;
+    }
   }
 }

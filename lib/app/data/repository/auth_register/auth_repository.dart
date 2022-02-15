@@ -7,6 +7,10 @@ class AuthRepository {
   AuthRepository({required this.apiClient});
 
   Future<dynamic> auth(String cpf, String password) async {
-    return await apiClient.auth(cpf, password);
+    try {
+      return await apiClient.auth(cpf, password);
+    } catch (e) {
+      rethrow;
+    }
   }
 }

@@ -1,10 +1,11 @@
 // @dart=2.9
 
+import 'dart:async';
+
 import 'package:cGamer/app/data/models/user_account_models/register_model.dart';
 import 'package:cGamer/app/utils/cache_utils/cache_utils.dart';
 import 'package:cGamer/app/utils/generic_utils/flavor_config.dart';
 import 'package:cGamer/app/utils/generic_utils/precache_images.dart';
-import 'package:cGamer/app/utils/generic_utils/zendesk_utils.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

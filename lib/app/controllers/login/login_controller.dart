@@ -92,11 +92,12 @@ class LoginController extends GetxController {
 
   verifyIfIsException(dynamic responseHttp) async {
     if (ExceptionUtils.verifyIfIsException(responseHttp)) {
-      changeLoginErrorValue();
-      formKey.currentState?.validate();
+      SnackBarUtils.showSnackBar(
+          desc: 'Verifique seu CPF ou Senha, e tente novamente.',
+          title: 'Atenção');
     } else {
       CacheUtils.addToCache(
-          key: 'x-token', value: responseHttp.headers['x-token'] ?? "abcde");
+          key: 'x-token', value: responseHttp.headers['x-token']);
       Get.offAllNamed(Routes.MAIN_PAGES_HOLDER);
     }
 
@@ -107,20 +108,19 @@ class LoginController extends GetxController {
     closeKeyoard(buildContext);
     setLoading();
     clearCPFMask(cpfController.value);
-    authResponse = await repository.auth(
-        newCpfControllerMask.value.text, passwordController.value.text);
 
-    // http.post(
-    //   API().getUriComposed("/auth", null),
-    //   headers: {
-    //     "Access-Control-Allow-Headers":
-    //         "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,locale",
-    //     "Access-Control-Allow-Methods": "POST, OPTIONS",
-    //     "Access-Control-Allow-Origin": "*"
-    //   },
-    //   body: {"cpf": "52755277807", "password": "Carlera33"},
-    // );
-
-    verifyIfIsException(authResponse);
+    try {
+      authResponse = await repository.auth(
+          newCpfControllerMask.value.text, passwordController.value.text);
+      authing.value = false;
+      CacheUtils.addToCache(
+          key: 'x-token', value: authResponse.headers['x-token']);
+      Get.offAllNamed(Routes.MAIN_PAGES_HOLDER);
+    } catch (e) {
+      authing.value = false;
+      SnackBarUtils.showSnackBar(
+          desc: 'Verifique seu CPF ou Senha, e tente novamente.',
+          title: 'Atenção');
+    }
   }
 }

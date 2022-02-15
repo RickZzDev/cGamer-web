@@ -94,30 +94,30 @@ class ProfileView extends StatelessWidget {
                                             child: ProfileHeaderShimer(),
                                           ),
                                   ),
-                                  Container(
-                                      width: screenWidthhSize,
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.end,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.end,
-                                        children: [
-                                          Padding(
-                                              padding:
-                                                  EdgeInsets.only(right: 12),
-                                              child: IconButton(
-                                                  iconSize: 70,
-                                                  tooltip: "Conexões",
-                                                  onPressed: () => Get.toNamed(
-                                                          Routes.CONNECTIONS,
-                                                          arguments: {
-                                                            'fromHome': true
-                                                          }),
-                                                  icon: SvgPicture.asset(
-                                                      'assets/images/play_together/icon_conexoes.svg',
-                                                      color: secondaryColor)))
-                                        ],
-                                      )),
+                                  // Container(
+                                  //     width: screenWidthhSize,
+                                  //     child: Column(
+                                  //       mainAxisAlignment:
+                                  //           MainAxisAlignment.end,
+                                  //       crossAxisAlignment:
+                                  //           CrossAxisAlignment.end,
+                                  //       children: [
+                                  //         Padding(
+                                  //             padding:
+                                  //                 EdgeInsets.only(right: 12),
+                                  //             child: IconButton(
+                                  //                 iconSize: 70,
+                                  //                 tooltip: "Conexões",
+                                  //                 onPressed: () => Get.toNamed(
+                                  //                         Routes.CONNECTIONS,
+                                  //                         arguments: {
+                                  //                           'fromHome': true
+                                  //                         }),
+                                  //                 icon: SvgPicture.asset(
+                                  //                     'assets/images/play_together/icon_conexoes.svg',
+                                  //                     color: secondaryColor)))
+                                  //       ],
+                                  //     )),
                                 ]),
                                 ProfileOptionsComponent(
                                     profileController: _controller)

@@ -49,8 +49,12 @@ class LastMovimentsComponent extends StatelessWidget {
                     Container(
                       height: 28,
                       width: 28,
-                      child: SvgPicture.network(
-                        imgSrc ?? "",
+                      child: Image.asset(
+                        imgSrc != null
+                            ? imgSrc!.contains('entrada')
+                                ? "assets/images/home_images/entrada.png"
+                                : "assets/images/home_images/saida.png"
+                            : "assets/images/home_images/entrada.png",
                         color: primaryColor,
                       ),
                     ),

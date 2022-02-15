@@ -46,39 +46,47 @@ class ProfileOptionsComponent extends StatelessWidget {
             SizedBox(
               height: screenHeigthSize * 0.02,
             ),
-            Obx(() => _controller.hasCompletedBedgesRequest.value
-                ? _controller.badgesAndSelectedGamesHasLoaded()
-                    ? _controller.badgesAreEmpty()
-                        ? SizedBox(
-                            height: 0,
-                          )
-                        : Column(
-                            children: [
-                              SelectedBadgesArea(_controller),
-                              Divider(
-                                color: primaryColor,
-                              )
-                            ],
-                          )
-                    : SizedBox(
-                        height: 0,
-                      )
-                : SizedBox()),
-            Obx(() => _controller.hasCompletedBedgesRequest.value
-                ? _controller.badgesAndSelectedGamesHasLoaded()
-                    ? _controller.badgesAreEmpty()
-                        ? Container(
-                            margin: EdgeInsets.only(bottom: 12),
-                            child: BigProfileButton(
-                              onTap: _controller.goToMyProgress,
-                              text: "Selecione sua badge",
-                              size: 30,
-                              imgSrc:
-                                  "assets/images/gamification_icons/icon_badges.svg",
-                            ))
-                        : SizedBox()
-                    : SizedBox()
-                : SizedBox()),
+            // Obx(() => _controller.hasCompletedBedgesRequest.value
+            //     ? _controller.badgesAndSelectedGamesHasLoaded()
+            //         ? _controller.badgesAreEmpty()
+            //             ? SizedBox(
+            //                 height: 0,
+            //               )
+            //             : Column(
+            //                 children: [
+            //                   SelectedBadgesArea(_controller),
+            //                   Divider(
+            //                     color: primaryColor,
+            //                   )
+            //                 ],
+            //               )
+            //         : SizedBox(
+            //             height: 0,
+            //           )
+            //     : SizedBox()),
+            // Obx(() => _controller.hasCompletedBedgesRequest.value
+            //     ? _controller.badgesAndSelectedGamesHasLoaded()
+            //         ? _controller.badgesAreEmpty()
+            //             ? Container(
+            //                 margin: EdgeInsets.only(bottom: 12),
+            //                 child: BigProfileButton(
+            //                   onTap: _controller.goToMyProgress,
+            //                   text: "Selecione sua badge",
+            //                   size: 30,
+            //                   imgSrc:
+            //                       "assets/images/gamification_icons/icon_badges.svg",
+            //                 ))
+            //             : SizedBox()
+            //         : SizedBox()
+            //     : SizedBox()),
+            Padding(
+              padding: EdgeInsets.only(left: 24, right: 24, top: 8),
+              child: ProfileButton(
+                onTap: () => _controller.goToStore(),
+                text: "Baixe o App completo na Loja",
+                imgSrc: "assets/images/marketplace/Gamer.svg",
+              ),
+            ),
             Padding(
               padding: EdgeInsets.only(left: 24, right: 24, top: 8),
               child: ProfileButton(

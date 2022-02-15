@@ -65,11 +65,11 @@ class _TransferCoinPageState extends State<TransferCoinPage> {
               ),
             ),
             body: ListView(shrinkWrap: true, children: [
-              Obx(() => _controller.isPrime.value
-                  ? Container()
-                  : ProBannerSlim(
-                      title:
-                          "Prime: Zere a taxa de serviço na transferência.")),
+              // Obx(() => _controller.isPrime.value
+              //     ? Container()
+              //     : ProBannerSlim(
+              //         title:
+              //             "Prime: Zere a taxa de serviço na transferência.")),
               Padding(
                 padding: const EdgeInsets.all(24),
                 child: ListView(
@@ -202,7 +202,7 @@ class _TransferCoinPageState extends State<TransferCoinPage> {
                           ),
                         ),
                         SizedBox(
-                          height: 8,
+                          height: 20,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -40,28 +40,16 @@ class _WithdrawCoinViewState extends State<WithdrawCoinView> {
                     onPressedFunction: () {
                       if (!_controller.shouldShowError.value &&
                           _controller.walletIdController.text != "") {
-                        double totalWithdrawMafa = double.parse(_controller
-                            .mafaQuantityController.text
-                            .replaceAll(',', '.'));
-
-                        if (totalWithdrawMafa < 500) {
-                          SnackBarUtils.showSnackBar(
-                              color: Colors.orange[400],
-                              desc:
-                                  'O valor mínimo para solicitar retirada é de 500 \$\MAFA',
-                              title: 'Ops...');
-                        } else {
-                          _controller.tapContinue();
-                        }
+                        _controller.tapContinue();
                       }
                     },
                   ),
                 ),
                 body: Column(children: [
-                  Obx(() => _controller.isPrime.value
-                      ? Container()
-                      : ProBannerSlim(
-                          title: "Prime: Zere a taxa de serviço na retirada.")),
+                  // Obx(() => _controller.isPrime.value
+                  //     ? Container()
+                  //     : ProBannerSlim(
+                  //         title: "Prime: Zere a taxa de serviço na retirada.")),
                   Padding(
                     padding: const EdgeInsets.all(24),
                     child: ListView(
@@ -128,8 +116,6 @@ class _WithdrawCoinViewState extends State<WithdrawCoinView> {
                         SizedBox(
                           height: 8,
                         ),
-                        Text('Valor mínimo para saque é de 500 \$\MAFA',
-                            style: textStyle.copyWith(fontSize: 13)),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
@@ -205,7 +191,7 @@ class _WithdrawCoinViewState extends State<WithdrawCoinView> {
                               ),
                             ),
                             SizedBox(
-                              height: 8,
+                              height: 20,
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,

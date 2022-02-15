@@ -108,12 +108,12 @@ class CoinWalletController extends GetxController {
         "Mafacoin é o token do Mafagafo que você pode fazer transações e comprar seus NFT’S. ";
     questions.add(question);
 
-    FAQQuestion question0 = FAQQuestion();
-    question0.question = "Conheça o Jogo: Mafagafo";
-    question0.answer =
-        "O Mafagafo é o primeiro Game NFT brasileiro no mercado. O jogo funciona no modelo “Play to Earn”, literalmente “jogue para ganhar”. Somos um Game NFT de verdade. Não somos só mais uma promessa de lucro, somos de fato um jogo (jogável) que pode ser rentável para todos os jogadores.";
-    question0.videoId = "PN8Qi8t0k3g";
-    questions.add(question0);
+    // FAQQuestion question0 = FAQQuestion();
+    // question0.question = "Conheça o Jogo: Mafagafo";
+    // question0.answer =
+    //     "O Mafagafo é o primeiro Game NFT brasileiro no mercado. O jogo funciona no modelo “Play to Earn”, literalmente “jogue para ganhar”. Somos um Game NFT de verdade. Não somos só mais uma promessa de lucro, somos de fato um jogo (jogável) que pode ser rentável para todos os jogadores.";
+    // question0.videoId = "PN8Qi8t0k3g";
+    // questions.add(question0);
 
     FAQQuestion question9 = FAQQuestion();
     question9.question = "Como faço para jogar o GAME?";
