@@ -116,7 +116,7 @@ class ConfirmBuyCoinController extends GetxController {
               builder: (context) => Container(
                   margin: EdgeInsets.only(left: 24, right: 24),
                   width: screenWidthhSize,
-                  height: 430,
+                  height: MediaQuery.of(context).size.height * 0.7,
                   child: Column(
                     children: [
                       SizedBox(

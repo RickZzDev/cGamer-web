@@ -43,8 +43,9 @@ class _PersonalDataViewState extends State<PersonalDataView> {
                   child: Container(
                     child: Form(
                       key: _formKey,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      child: ListView(
+                        shrinkWrap: true,
+                        // crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           CustomRichText(
                               normalText: '', customText: "Dados pessoais"),

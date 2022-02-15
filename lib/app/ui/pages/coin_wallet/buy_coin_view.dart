@@ -53,7 +53,9 @@ class _BuyCoinViewState extends State<BuyCoinView> {
                               style:
                                   textStyle.copyWith(color: Color(0xFF9900CC))),
                           Text('MAFA Coins ', style: textStyle.copyWith()),
-                          Text('deseja comprar? ', style: textStyle.copyWith()),
+                          Flexible(
+                              child: Text('deseja comprar? ',
+                                  style: textStyle.copyWith())),
                         ],
                       ),
                       Center(
